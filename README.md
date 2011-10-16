@@ -12,11 +12,11 @@
   
   You can install the latest version via npm:
   
-    $ npm install node-systemd
+    $ npm install systemd
 
   Require the systemd module and pass 'systemd' as a parameter to listen():
 
-    require('node-systemd');
+    require('systemd');
 
     var http = require('http');
     http.createServer(function (req, res) {
@@ -97,7 +97,7 @@
 
     var http = require('http');
     
-    require('../lib/systemd');
+    require('systemd');
     
     var port = process.env.LISTEN_PID > 0 ? 'systemd' : 1337;
     http.createServer(function (req, res) {
