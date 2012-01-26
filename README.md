@@ -4,8 +4,6 @@
   
   For more background on socket activation: http://0pointer.de/blog/projects/socket-activation.html
 
-  Currently only works on 0.4.x, support for node 0.5.x and up will be added once 0.6 is out and ready for production usage.
-
   Obviously, this will only work on Linux distributions with systemd (such as Fedora).
 
   Developed by Flow Pilots: http://www.flowpilots.com/
@@ -113,7 +111,7 @@
 
     (The MIT License)
 
-    Copyright (C) 2011 by Ruben Vermeersch <ruben@savanne.be>
+    Copyright (C) 2011-2012 by Ruben Vermeersch <ruben@savanne.be>
 
     Permission is hereby granted, free of charge, to any person obtaining a copy
     of this software and associated documentation files (the "Software"), to deal
