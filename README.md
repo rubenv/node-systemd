@@ -44,6 +44,10 @@
 
   Be sure to subtitute the paths to node and your script!
 
+  Reload the systemd daemon so that it picks up the new unit files:
+
+    systemctl --system daemon-reload
+
   Enable and start the socket:
 
     systemctl enable node-hello.socket
@@ -59,11 +63,7 @@
 
   Great, it's running!
 
-  Enable the service:
-
-    systemctl enable node-hello.service
-
-  Check the status, not running yet:
+  Check the status of the service, not running yet:
 
     # systemctl status node-hello.service
     node-hello.service
