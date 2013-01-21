@@ -1,6 +1,8 @@
 # systemd for Node.js
 
   Adds support for running node.js as a socket-activated service under systemd.
+
+  More info on the how and why: http://savanne.be/articles/deploying-node-js-with-systemd/
   
   For more background on socket activation: http://0pointer.de/blog/projects/socket-activation.html
 
