@@ -1,20 +1,29 @@
 {
-    "name"          : "systemd",
-    "version"       : "0.2.2",
-    "main"          : "./lib/systemd.js",
-    "description"   : "systemd socket activation support for Node.js",
-    "keywords"      : ["systemd"],
-    "url"           : "http://github.com/rubenv/node-systemd",
-    "repositories"  : [
-        {
-            "type" : "git",
-            "url"  : "git://github.com/rubenv/node-systemd.git" 
-        } 
-    ],
-    "author"        : "Ruben Vermeersch <ruben@savanne.be>",
-    "contributors"  : [],
-    "licenses"      : ["MIT"],
-    "dependencies"  : [],
-    "engines"       : { "node": ">=0.6.11 <0.9.0" }
+  "name": "systemd",
+  "version": "0.2.2",
+  "main": "./lib/systemd.js",
+  "description": "systemd socket activation support for Node.js",
+  "keywords": [
+    "systemd"
+  ],
+  "url": "http://github.com/rubenv/node-systemd",
+  "repositories": [
+    {
+      "type": "git",
+      "url": "git://github.com/rubenv/node-systemd.git"
+    }
+  ],
+  "author": "Ruben Vermeersch <ruben@savanne.be>",
+  "contributors": [],
+  "licenses": [
+    "MIT"
+  ],
+  "dependencies": [],
+  "engines": {
+    "node": ">=0.6.11 <0.9.0"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.0",
+    "grunt-contrib-jshint": "~0.2.0"
+  }
 }
-

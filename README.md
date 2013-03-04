@@ -109,11 +109,29 @@
 
   This makes it possible to run the script stand-alone in development, yet use systemd when started through systemd.
     
+## Contributing
+
+  A jshint file is included to check code style.
+
+  Before submitting a pull request, please check your code. For convenience, I've also added a grunt file.
+
+  Install the dev dependencies:
+
+    npm install --dev
+
+  Install the grunt cli if you haven't already done so:
+
+    npm -g install grunt-cli
+
+  Run it:
+
+    grunt
+
 ## License 
 
     (The MIT License)
 
-    Copyright (C) 2011-2012 by Ruben Vermeersch <ruben@savanne.be>
+    Copyright (C) 2011-2013 by Ruben Vermeersch <ruben@savanne.be>
 
     Permission is hereby granted, free of charge, to any person obtaining a copy
     of this software and associated documentation files (the "Software"), to deal
