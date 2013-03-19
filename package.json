@@ -13,10 +13,20 @@
       "url": "git://github.com/rubenv/node-systemd.git"
     }
   ],
-  "author": "Ruben Vermeersch <ruben@savanne.be>",
+  "bugs": {
+    "url": "https://github.com/rubenv/node-systemd/issues"
+  },
+  "author": {
+    "name": "Ruben Vermeersch",
+    "email": "ruben@savanne.be",
+    "url": "http://savanne.be/"
+  },
   "contributors": [],
   "licenses": [
-    "MIT"
+    {
+      "type": "MIT",
+      "url": "https://github.com/rubenv/node-systemd/blob/master/LICENSE"
+    }
   ],
   "dependencies": [],
   "engines": {
