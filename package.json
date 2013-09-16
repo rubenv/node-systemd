@@ -1,6 +1,6 @@
 {
   "name": "systemd",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "main": "./lib/systemd.js",
   "description": "systemd socket activation support for Node.js",
   "keywords": [
@@ -34,6 +34,7 @@
   },
   "devDependencies": {
     "grunt": "~0.4.0",
-    "grunt-contrib-jshint": "~0.2.0"
+    "grunt-contrib-jshint": "~0.2.0",
+    "grunt-release": "~0.5.1"
   }
 }
