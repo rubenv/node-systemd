@@ -7,12 +7,7 @@
     "systemd"
   ],
   "url": "http://github.com/rubenv/node-systemd",
-  "repositories": [
-    {
-      "type": "git",
-      "url": "git://github.com/rubenv/node-systemd.git"
-    }
-  ],
+  "repository": "git://github.com/rubenv/node-systemd.git",
   "bugs": {
     "url": "https://github.com/rubenv/node-systemd/issues"
   },
