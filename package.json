@@ -13,8 +13,8 @@
   },
   "author": {
     "name": "Ruben Vermeersch",
-    "email": "ruben@savanne.be",
-    "url": "http://savanne.be/"
+    "email": "ruben@rocketeer.be",
+    "url": "http://rocketeer.be/"
   },
   "contributors": [],
   "licenses": [
@@ -23,13 +23,12 @@
       "url": "https://github.com/rubenv/node-systemd/blob/master/LICENSE"
     }
   ],
-  "dependencies": [],
   "engines": {
     "node": ">=0.6.11 <0.11.0"
   },
   "devDependencies": {
     "grunt": "~0.4.0",
-    "grunt-contrib-jshint": "~0.2.0",
-    "grunt-release": "~0.5.1"
+    "grunt-contrib-jshint": "~0.8.0",
+    "grunt-release": "~0.7.0"
   }
 }
