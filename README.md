@@ -44,7 +44,7 @@
     User=nobody
     Group=nobody
 
-  Be sure to subtitute the paths to node and your script!
+  Be sure to substitute the paths to node and your script!
 
   Reload the systemd daemon so that it picks up the new unit files:
 
