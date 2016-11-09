@@ -54,6 +54,11 @@ Group=nobody
 
   Be sure to substitute the paths to node and your script!
 
+  * &#x26A0; __Run node directly__ or make sure your startup helper scripts
+    can hand over the sockets. `npm start` [probably won't work][issue-11].
+
+  [issue-11]: https://github.com/rubenv/node-systemd/issues/11
+
   Reload the systemd daemon so that it picks up the new unit files:
 
 ```sh
