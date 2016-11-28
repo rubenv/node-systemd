@@ -8,8 +8,6 @@
 
   Obviously, this will only work on Linux distributions with systemd (such as Fedora).
 
-  Developed by Flow Pilots: http://www.flowpilots.com/
-
 ## Usage
 
   You can install the latest version via npm:
