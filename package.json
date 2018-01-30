@@ -1,6 +1,6 @@
 {
   "name": "systemd",
-  "version": "0.2.6",
+  "version": "0.3.0",
   "main": "./lib/systemd.js",
   "description": "systemd socket activation support for Node.js",
   "keywords": [
