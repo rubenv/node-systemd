@@ -136,9 +136,7 @@ http.createServer(function (req, res) {
 
 ## Contributing
 
-  A jshint file is included to check code style.
-
-  Before submitting a pull request, please check your code. For convenience, I've also added a grunt file.
+  Before submitting a pull request, please check your code.
 
   Install the dev dependencies:
 
@@ -146,16 +144,10 @@ http.createServer(function (req, res) {
 $ npm install --dev
 ```
 
-  Install the grunt cli if you haven't already done so:
+  Run [ESLint](https://eslint.org):
 
 ```sh
-$ npm -g install grunt-cli
-```
-
-  Run it:
-
-```sh
-$ grunt
+$ npm run lint
 ```
 
 

@@ -26,9 +26,11 @@
   "engines": {
     "node": ">=12"
   },
+  "scripts": {
+    "lint": "eslint .",
+    "prepublishOnly": "npm run lint"
+  },
   "devDependencies": {
-    "grunt": "~0.4.0",
-    "grunt-contrib-jshint": "~0.8.0",
-    "grunt-release": "~0.7.0"
+    "eslint": "^8.25.0"
   }
 }
