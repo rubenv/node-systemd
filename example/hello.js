@@ -1,9 +1,11 @@
 var http = require('http');
+const {getListenArgs} = require('../lib/systemd');
 
-require('../lib/systemd');
-
-var port = process.env.LISTEN_PID > 0 ? 'systemd' : 1337;
-http.createServer(function (req, res) {
+const server = http.createServer(function (req, res) {
     res.writeHead(200, {'Content-Type': 'text/plain'});
     res.end('Hello World\n');
-}).listen(port);
+});
+
+var port = 1337;
+const listenArgs = getListenArgs() || [port];
+server.listen(...listenArgs);

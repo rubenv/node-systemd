@@ -10,22 +10,31 @@
 
 ## Usage
 
-  You can install the latest version via npm:
+  Consider a simple HTTP server:
+
+```javascript
+var http = require('http');
+
+const server = http.createServer(function (req, res) {
+    res.writeHead(200, {'Content-Type': 'text/plain'});
+    res.end('Hello World\n');
+});
+```
+
+  We want our server to work both stand-alone (`node server.js`) and as a socket-activated systemd service.
 
 ```sh
 $ npm install systemd
 ```
 
-  Require the systemd module and pass 'systemd' as a parameter to listen():
+  If the service is started via systemd socket activation, `getListenArgs()` will return an array of arguments to be passed into `server.listen()`. Otherwise, it will return `null` and we'll listen to the port as usual.
 
 ```javascript
-require('systemd');
+const {getListenArgs} = require('systemd');
 
-var http = require('http');
-http.createServer(function (req, res) {
-    res.writeHead(200, {'Content-Type': 'text/plain'});
-    res.end('Hello World\n');
-}).listen('systemd');
+const port = 1000;
+const listenArgs = getListenArgs() || [port];
+server.listen(...listenArgs);
 ```
 
   Install a systemd socket file (e.g.: /etc/systemd/system/node-hello.socket):
@@ -116,23 +125,6 @@ node-hello.service
               └ 1159 /path/to/bin/node /path/to/hello.js
 ```
 
-## Only listen to systemd when running under systemd
-
-  You can make the systemd usage conditional by checking for the systemd environment variable:
-
-```javascript
-var http = require('http');
-
-require('systemd');
-
-var port = process.env.LISTEN_PID > 0 ? 'systemd' : 1337;
-http.createServer(function (req, res) {
-    res.writeHead(200, {'Content-Type': 'text/plain'});
-    res.end('Hello World\n');
-}).listen(port);
-```
-
-  This makes it possible to run the script stand-alone in development, yet use systemd when started through systemd.
 
 ## Contributing
 
