@@ -2,6 +2,8 @@
 
   Adds support for running node.js as a socket-activated service under systemd.
 
+  *Note:* **This is a temporary fork of [`rubenv/node-systemd`](https://github.com/rubenv/node-systemd)**.
+
   More info on the how and why: https://rocketeer.be/articles/deploying-node-js-with-systemd/
 
   For more background on socket activation: http://0pointer.de/blog/projects/socket-activation.html
@@ -24,13 +26,13 @@ const server = http.createServer(function (req, res) {
   We want our server to work both stand-alone (`node server.js`) and as a socket-activated systemd service.
 
 ```sh
-$ npm install systemd
+$ npm install @derhuerst/systemd
 ```
 
   If the service is started via systemd socket activation, `getListenArgs()` will return an array of arguments to be passed into `server.listen()`. Otherwise, it will return `null` and we'll listen to the port as usual.
 
 ```javascript
-const {getListenArgs} = require('systemd');
+const {getListenArgs} = require('@derhuerst/systemd');
 
 const port = 1000;
 const listenArgs = getListenArgs() || [port];
