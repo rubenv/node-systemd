@@ -1,3 +1,7 @@
+&#x26A0;&#x26A0;&#x26A0; No longer maintained! See [@derhuerst/systemd](https://github.com/derhuerst/node-systemd) for an alternative. &#x26A0;&#x26A0;&#x26A0;
+
+---
+
 # systemd for Node.js
 
   Adds support for running node.js as a socket-activated service under systemd.
